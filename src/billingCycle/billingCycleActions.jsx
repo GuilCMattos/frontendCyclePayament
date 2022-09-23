@@ -2,7 +2,7 @@ import axios from 'axios'
 import { toastr } from 'react-redux-toastr'
 
 const BASE_URL = 'http://localhost:3030/api'
-const INITIAL_VALUES = {}
+const INITIAL_VALUES = {credits:[{}]}
 
 import {reset as resetForm, initialize} from 'redux-form'
 import { showTabs, selectTab } from '../common/tab/tabActions'
