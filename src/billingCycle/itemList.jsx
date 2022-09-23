@@ -5,6 +5,8 @@ import { Field, arrayInsert, arrayRemove } from 'redux-form'
 import Grid from '../common/layout/Grid'
 import Input from '../common/form/Input'
 
+import If from '../common/operador/If'
+
 class ItemList extends Component { 
 
     add(index, item = {}) { 
