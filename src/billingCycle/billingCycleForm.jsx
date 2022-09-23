@@ -5,6 +5,7 @@ import { reduxForm, Field} from 'redux-form'
 import labelInput from '../common/form/labelInput'
 
 import {init} from './billingCycleActions'
+import CreditList from './creditList'
 
 class billingCycleForm extends Component { 
     render() { 
@@ -21,6 +22,7 @@ class billingCycleForm extends Component {
                     readOnly={readOnly}
                     label='Ano' cols='12 4' type="number" placeholder='Informe o ano'
                     />
+                    <CreditList cols='12 6' />
                 </div>
                 <div className="box-footer">
                     <button type='submit' className={`btn btn-${this.props.submitClass}`}> {this.props.submitLabel}</button>
