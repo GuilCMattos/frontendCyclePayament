@@ -27,7 +27,7 @@ class billingCycleForm extends Component {
                     />
 
                     <ItemList cols='12 6' readOnly={readOnly} list={debts}
-                    field="debts" legend='Débitos'
+                    field="debts" legend='Débitos' showStatus={true}
                     />
                 </div>
                 <div className="box-footer">
