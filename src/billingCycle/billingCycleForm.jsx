@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { reduxForm, Field, formValueSelector} from 'redux-form'
 import LabelInput from '../common/form/labelInput'
+import Summary from './Summary'
 
 import {init} from './billingCycleActions'
 import ItemList from './itemList'
@@ -22,6 +23,9 @@ class billingCycleForm extends Component {
                     readOnly={readOnly}
                     label='Ano' cols='12 4' type="number" placeholder='Informe o ano'
                     />
+
+                <Summary credit={1000} debt={100}/>
+
                     <ItemList cols='12 6' readOnly={readOnly} list={credits}
                     field="credits" legend='Créditos'
                     />
